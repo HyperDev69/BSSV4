@@ -2,6 +2,7 @@
 Brawl Stars V4 server without database based on ObiadBrawl, the server isn't for Prod, tho you can add your own packets to it.
 # Features 
 -Menu
+
 -Offline battles
 # Set up
 Python 3.9, change port in settings.json to your port.

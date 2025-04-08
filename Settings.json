@@ -13,7 +13,7 @@
       "UpdateUrl": "https://github.com/hyperdev69",
       "BrawlerTrophies": 500,
       "BrawlerTrophies_perRank": 500,
-      "isInMaintenance": "",
+      "isInMaintenance": false,
       "ControlMode": 1,
       "coins_doubler": 0,
       "coins_boost": 0,

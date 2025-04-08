@@ -1,0 +1,18 @@
+import json
+
+class Player:
+    
+    settings = json.load(open('Settings.json'))
+    
+    high_id = 0
+    low_id = 1
+    token = None
+    unlocked_brawlers = {"0": {"Cards": {"0": 1, "1": 5, "2": 5, "3": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 2, "StarPower": 0}, "15": {"Cards": {"60": 1, "62": 5, "61": 5, "63": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "2": {"Cards": {"8": 1, "9": 5, "10": 5, "11": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "4": {"Cards": {"16": 1, "18": 5, "19": 5, "17": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": "", "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "1": {"Cards": {"4": 1, "6": 5, "5": 5, "7": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "16": {"Cards": {"64": 1, "65": 5, "66": 5, "67": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "13": {"Cards": {"52": 1, "54": 5, "55": 5, "53": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "10": {"Cards": {"40": 1, "41": 5, "42": 5, "43": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "7": {"Cards": {"28": 1, "29": 5, "30": 5, "31": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "14": {"Cards": {"56": 1, "57": 5, "58": 5, "59": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "8": {"Cards": {"32": 1, "33": 5, "34": 5, "35": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "3": {"Cards": {"12": 1, "13": 5, "14": 5, "15": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "12": {"Cards": {"48": 1, "49": 5, "50": 5, "51": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "6": {"Cards": {"24": 1, "27": 5, "26": 5, "25": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "9": {"Cards": {"36": 1, "38": 5, "37": 5, "39": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "11": {"Cards": {"44": 1, "46": 5, "45": 5, "47": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "5": {"Cards": {"20": 1, "21": 5, "22": 5, "23": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}, "17": {"Cards": {"68": 1, "70": 5, "69": 5, "71": 5}, "Skins": [0], "selectedSkin": 0, "Trophies": 0, "HighestTrophies": 0, "PowerLevel": 0, "PowerPoints": 0, "State": 0, "StarPower": 0}}
+    if settings["isInMaintenance"]:
+        err_code = 10
+        isInMaintenance = True
+    def __init__(self, device):
+        self.device = device
+
+    def encode(self):
+        return None

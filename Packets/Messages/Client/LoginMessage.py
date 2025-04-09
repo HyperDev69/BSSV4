@@ -39,7 +39,7 @@ class LoginMessage(ByteStream):
     def process(self):
         if self.player.usedVersion == 4:
             if self.loginPayload["token"] == b'':
-                self.loginPayload["token"] = self.player.token = Helpers.randomStringDigits(self)
+                self.loginPayload["token"] = "token"
             else:
                 self.player.token = self.loginPayload["token"]
             

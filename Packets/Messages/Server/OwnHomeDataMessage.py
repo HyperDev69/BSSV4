@@ -161,7 +161,7 @@ class OwnHomeDataMessage(Writer):
             self.writeScID(15, 0) # map
             self.writeVInt(self.events_coins_collected) #  coins already collected
             self.writeVInt(self.events_type) #  coins collected statut
-            self.writeString("<cff0e00>W<cff1c00>e<cff2a00>l<cff3800>c<cff4600>o<cff5500>m<cff6300>e<cff7100> <cff7f00>t<cff8d00>o<cff9b00> <cffaa00>B<cffb800>S<cffc600>S<cffd400>V<cffe200>4<cfff000>!<cfeff00> <cf0ff00>t<ce2ff00>.<cd4ff00>m<cc6ff00>e<cb8ff00>/<ca9ff00>h<c9bff00>y<c8dff00>p<c7fff00>e<c71ff00>r<c63ff00>_<c54ff00>s<c46ff00>e<c38ff00>r<c2aff00>v<c1cff00>e<c0eff00>r<c00fe00>s</c>") # lobbyinfo
+            self.writeString("<cff0e00>h<cff1c00>t<cff2a00>t<cff3800>p<cff4600>s<cff5500>:<cff6300>/<cff7100>/<cff7f00>g<cff8d00>i<cff9b00>t<cffaa00>h<cffb800>u<cffc600>b<cffd400>.<cffe200>c<cfff000>o<cfeff00>m<cffff00>/<cf0ff00>H<ce2ff00>y<cd4ff00>p<cc6ff00>e<cb8ff00>r<ca9ff00>D<c9bff00>e<c8dff00>v<c7fff00>6<c71ff00>9<c63ff00>/<c54ff00>B<c46ff00>S<c38ff00>S<c2aff00>V<c1cff00>4</c>") # lobbyinfo
             self.writeBoolean(False)
         # comming soon event ends
             

@@ -40,4 +40,5 @@ class TeamMessage(Writer):
                 self.writeScID(29, 0) # Unknown
                 self.writeVInt(self.BrawlerTrophies) # Brawler Trophies
                 self.writeVInt(self.BrawlerTrophies_perRank) # Brawler Trophies for Rank
-                self.writeVInt(0) # Power level 
+                self.writeVInt(0) # Brawler power level 
+                self.writeVInt(self.gameroom_status) # Status

@@ -2,8 +2,6 @@ import json
 
 class Player:
     
-    settings = json.load(open('Settings.json'))
-    
     high_id = 0
     low_id = 1
     token = None

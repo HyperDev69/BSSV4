@@ -51,8 +51,8 @@ class OwnHomeDataMessage(Writer):
         
         self.writeVInt(self.trophies)  # Trophies
         self.writeVInt(self.HighestTrophies)  # Highest Trophies
-        self.writeVInt(0) # Unknown
-        self.writeVInt(self.Experience)  # Experience
+        self.writeVInt(self.Experience) # Experience
+        self.writeVInt(0)
         
         self.writeScID(28, self.player_icon)  # Player Icon
         self.writeVInt(7) # Played Game Modes Count
